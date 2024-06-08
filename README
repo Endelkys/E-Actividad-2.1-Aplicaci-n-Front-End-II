@@ -10,15 +10,13 @@ Asignatura Frontend II
 <h3>Colaboradores
 </h3>
 <ul>
-<li>Rosimar Barrios  <i>C.I: 30.976.217</i></li>
-<li>Cristian Rangel  <i>C.I: 31.898.075</i></li>
+<li>Endelkys Matos <i>C.I: </i></li>
+<li>Daniel Rendon <i>C.I: 30.600.358</i></li>
 </ul>
 
 
 <h2>Descripción</h2>
 <b>Link del video explicativo:  </b>
-<b>Link del Diseño en Figma: https://www.figma.com/file/GqftY2LIebyMwlHnNMLTNM/e-actividad-2.1?type=design&node-id=3-29&mode=design&t=azTP9jnDpxgGrSRa-0</b>
-
 Esta aplicación consiste en una tienda online de electrodomésticos, donde los usuarios administradores podrán gestionar todos los productos y ver los clientes registrados. De igual forma, el cliente puede comprar, ver productos y añadirlo a favoritos.
 
 ¡Importante! para le realización de proyecto empleamos el servidor de desarrollo Vite, librerías como React-Bootstrap, React-Icons, y frameworks CSS como Tailwind. Para backend Nodejs y como base de datos MongoDB.
@@ -35,7 +33,7 @@ Todos estos procesos los realizaremos por "Símbolos de Sistema", es decir, el <
 	```</li>
 	<li>En el momento que nos encontremos en el lugar deseado, ahora ejecutaremos el comando de git <b>clone</b> junto con la ruta URL del repositorio en la web.
 	```
-	$ git clone https://github.com/rossjbm/Actividad2.1-FrontendII
+	$ git clone https://github.com/Endelkys/E-Actividad-2.1-Aplicaci-n-Front-End-II
 	```</li> 
 	<li>Y con esto el repositorio habrá sido clonado. Ahora si puedes ingresar a al por Visual Studio Code.</li>
 </ol>
@@ -51,7 +49,7 @@ Todos estos procesos los realizaremos por "Símbolos de Sistema", es decir, el <
 	(si aín no la tienes aqui te dejamos el link de descarga: ttps://www.mongodb.com/try/download/database-tools</li>
 	<li>Abrimos el terminal de nuestra computadora, y escribieremos el comando <b>mongorestore</b> seguido de <b>--db</b>, luego colocas el nombre de la DB en este caso <b>electronics</b> y por último la dirección de la DB desde nuestro repositorio la cual se encuentra en <i>..\E-Actividad-FrontEnd-4.3\backend\database\electronics></i>. Ejemplo:
 	```
-	$ mongorestore --d electronics C:\ruta\GitHub\FRONT-II\Actividad2.1-FrontendII\backend\database\electronics
+	$ mongorestore --d electronics C:\ruta\GitHub\FRONT-II\E-Actividad-2.1-Aplicaci-n-Front-End-II\backend\database\electronics
 	```</li> 
 	<li>Das enter, y después de unos segundos la importación estará lista. De hecho te dirá el número de collecciones creadas y documentos. Para confirmar que ya cuentes con la DB ingresa los siguientes comandos en un nuevo terminal para ver las base de datos disponibles:
 	```
@@ -65,13 +63,13 @@ Todos estos procesos los realizaremos por "Símbolos de Sistema", es decir, el <
 <ol>
 	<li>Abrimos en un Visual Studio Carperta de <b>backend</b>.</li>
 	<li>Creamos un archivo de variables de entorno <b>.env</b> en cual indicaremos la URL de conexión con la DB.
-	Esta URL la podemos encontrar al iniciar el cliente de MongoDB (teniendo abierto su servidor). Luego de decirnos la versión nos dirá lo siguiente: 
+	Esta URL la podemos encontrar al iniciar el cliente de MongoDB (teniendo abierto su servidor). Luego de decirnos  la versiónnos dirá lo siguiente: 
 	```
-	connecting to: mongodb://IP:27017/
+	connecting to: mongodb://localhost:27017/
 	```
 	En IP te aprarecerá una serie de números que son tu identificador, copiamos esa ruta y lo colocamos en el <b>.env</b> de la siguiente forma:
 	```
-	DATABASE=mongodb://IP:27017/
+	DATABASE=mongodb://localhost:27017/
 	```
 	</li>
 	<li>Abrir el terminal de Visual Studio Code, e instalar npm con el siguiente comando:
